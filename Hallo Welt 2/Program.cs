@@ -18,8 +18,44 @@ namespace Hallo_Welt_2
             }
             dog.Geschlecht = "Rüde";
             {
-                Console.WriteLine(dog.Name + " ist ein " + dog.Geschlecht + ".");
+                if (dog.Geschlecht == "Rüde")
+                {
+                    Console.WriteLine(dog.Name + " ist ein " + dog.Geschlecht + ".");
+                }
+                else
+                {
+                    Console.WriteLine(dog.Name + " ist ein Weibchen.");
+                }
             }
+            dog.Rasse = "Husky";
+            {
+                switch(dog.Rasse)
+                {
+                    case "Golden Retriever":
+                        dog.Fellfarbe = "Gold";
+                        break;
+                    case "Husky":
+                        dog.Fellfarbe = "Weiß und Schwarz";
+                        break;
+                    case "Dachs":
+                        dog.Fellfarbe = "Braun";
+                        break;
+                    case  "Rottweiler":
+                        dog.Fellfarbe = "Schwarz";
+                        break;
+                    case "Chihuahua":
+                        dog.Fellfarbe = "Hellbraun";
+                        break;
+                    default:
+                        {
+                            Console.WriteLine("Ungültige Rasse!");
+                        }
+                        break;
+                }
+
+                Console.WriteLine(dog.Name + " ist ein " + dog.Rasse + " und das Fell ist " + dog.Fellfarbe + ".");
+            }
+
             dog.Bellen();
             dog.Bewegen();
             dog.Schlecken();
@@ -50,6 +86,7 @@ namespace Hallo_Welt_2
 
         public string Name { get; set; }
         public string Rasse { get; set; }
+        public string Fellfarbe { get; set; }
 
         //Methoden
 
@@ -61,6 +98,5 @@ namespace Hallo_Welt_2
         {
             Console.WriteLine("Schlecken...");
         }
-
     }
 }
