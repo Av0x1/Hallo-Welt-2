@@ -22,6 +22,7 @@ namespace Hallo_Welt_2
             }
             dog.Bellen();
             dog.Bewegen();
+            dog.Schlecken();
 
 
             Console.ReadKey();
@@ -60,5 +61,6 @@ namespace Hallo_Welt_2
         {
             Console.WriteLine("Schlecken...");
         }
+
     }
 }
