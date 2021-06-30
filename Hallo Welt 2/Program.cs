@@ -15,21 +15,21 @@ namespace Hallo_Welt_2
             Console.WriteLine("Guten Tag, ich bin das Haustierprogramm. Mit wem kommuniziere ich?");
 
             string userName = Console.ReadLine();
-            Console.WriteLine(userName + "? Das ist aber ein schöner Name. Bist du denn männlich oder weiblich?");
+            Console.WriteLine("\n" + userName + "? Das ist aber ein schöner Name. Bist du denn männlich oder weiblich?");
             string userGeschlecht = Console.ReadLine();
 
             switch (userGeschlecht)
             {
                 case "Männlich":
-                        Console.WriteLine("Du bist also ein Mann? Sehr interessant. Wie alt bist du denn?");
+                        Console.WriteLine("\nDu bist also ein Mann? Sehr interessant. Wie alt bist du denn?");
                         Console.ForegroundColor = ConsoleColor.Blue;
                     break;
                 case "Weiblich":
-                        Console.WriteLine("Du bist also eine Frau? Sehr interessant. Wie alt bist du denn?");
+                        Console.WriteLine("\nDu bist also eine Frau? Sehr interessant. Wie alt bist du denn?");
                         Console.ForegroundColor = ConsoleColor.Red;
                     break;
                 default:
-                        Console.WriteLine("Du bist also Divers? Sehr interessant. Wie alt bist du denn?");
+                        Console.WriteLine("\nDu bist also Divers? Sehr interessant. Wie alt bist du denn?");
                         Console.ForegroundColor = ConsoleColor.Magenta;
                     break;
             }
@@ -38,19 +38,14 @@ namespace Hallo_Welt_2
 
             if(numAlter < 18)
             {
-                Console.WriteLine("Es tut mir leid. Du bist zu jung um dieses Programm nutzen zu dürfen. Dieses Programm ist ab 18 Jahren.");
+                Console.WriteLine("Es tut mir leid. Du bist zu jung um dieses Programm nutzen zu dürfen. Dieses Programm ist ab 18 Jahren.\n");
+                Console.ReadKey();
+                Environment.Exit(0);
             }
             if(numAlter >= 18)
             {
-                Console.WriteLine("Du bist alt genug. Das Haustierprogramm ermöglicht es dir ein beliebiges Haustier zu konfigurieren. Entscheide dich für eins dieser Tiere: Hund, Katze, Hamster oder Schildkröte.");
+                Console.WriteLine("Du bist alt genug. Das Haustierprogramm ermöglicht es dir ein beliebiges Haustier zu konfigurieren.\nEntscheide dich für eins dieser Tiere: Hund, Katze, Hamster oder Schildkröte./n");
             }
-            else
-            {
-                Console.WriteLine("Alter ist ungültig. Das Programm wird jetzt beendet.");
-                Console.ReadKey();
-            }
-
-
             string userInput = Console.ReadLine();
 
             //Code Auswahl: Hund
@@ -163,43 +158,6 @@ namespace Hallo_Welt_2
                     }
                     break;
             }
-        }
-    }
-
-    class Tier
-    {
-        //Eigenschaften
-
-        public string Geschlecht { get; set; }
-
-        public string Alter { get; set; }
-
-        //Methoden
-
-        public void Bewegen()
-        {
-            Console.WriteLine("Bewegen...");
-        }
-
-    }
-
-    class Hund : Tier
-    {
-        //Eigenschaften
-
-        public string Name { get; set; }
-        public string Rasse { get; set; }
-        public string Fellfarbe { get; set; }
-
-        //Methoden
-
-        public void Bellen()
-        {
-            Console.WriteLine("Bellen...");
-        }
-        public void Schlecken()
-        {
-            Console.WriteLine("Schlecken...");
         }
     }
 }
