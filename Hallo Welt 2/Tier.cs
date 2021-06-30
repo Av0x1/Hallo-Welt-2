@@ -18,7 +18,7 @@ namespace Hallo_Welt_2
 
         public void Bewegen()
         {
-            Console.WriteLine("Bewegen...");
+            Console.WriteLine("Rennt weg!");
         }
 
     }

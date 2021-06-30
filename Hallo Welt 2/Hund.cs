@@ -18,11 +18,15 @@ namespace Hallo_Welt_2
 
         public void Bellen()
         {
-            Console.WriteLine("Bellen...");
+            Console.WriteLine("Bellt!");
         }
         public void Schlecken()
         {
-            Console.WriteLine("Schlecken...");
+            Console.WriteLine("Schleckt!");
+        }
+        public void Knurren()
+        {
+            Console.WriteLine("Knurrt!");
         }
     }
 }
