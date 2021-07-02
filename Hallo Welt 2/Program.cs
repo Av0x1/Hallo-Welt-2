@@ -44,7 +44,7 @@ namespace Hallo_Welt_2
             }
             if(numAlter >= 18)
             {
-                Console.WriteLine("\nDu bist alt genug. Das Haustierprogramm stellt dir verschiedene Hund und Katzen vor.\nEntscheide dich für eins dieser Tiere:\n- Hund\n- Katze\n");
+                Console.WriteLine("\nDu bist alt genug. Das Haustierprogramm stellt dir verschiedene Hunde und Katzen vor.\nEntscheide dich für eins dieser Tiere:\n- Hund\n- Katze\n");
             }
             string userInput = Console.ReadLine();
 
@@ -243,20 +243,20 @@ namespace Hallo_Welt_2
                             case "Hund 1":
                                 Console.WriteLine(dog1.Name + ":");
                                 dog1.Bellen();
-                                Console.WriteLine(dog1.Name + "scheint dich nicht zu mögen.");
+                                Console.WriteLine(dog1.Name + " scheint dich nicht zu mögen.");
                                 Console.ReadKey();
                                 break;
                             case "Hund 2":
                                 Console.WriteLine(dog2.Name + ":");
                                 dog2.Schlecken();
-                                Console.WriteLine(dog2.Name + "scheint dich zu mögen.");
+                                Console.WriteLine(dog2.Name + " scheint dich zu mögen.");
                                 Console.ReadKey();
                                 break;
                             case "Hund 3":
                                 Console.WriteLine(dog3.Name + ":");
                                 dog3.Knurren();
                                 dog3.Bewegen();
-                                Console.WriteLine(dog3.Name + "scheint Angst zu haben.");
+                                Console.WriteLine(dog3.Name + " scheint Angst zu haben.");
                                 Console.ReadKey();
                                 break;
                         }
@@ -287,7 +287,7 @@ namespace Hallo_Welt_2
                                 Console.WriteLine(cat1.Name + " ist eine " + cat1.Geschlecht + ".");
                             }
                         }
-                        cat1.Rasse = "Siam";
+                        cat1.Rasse = "Siamkatze";
                         {
                             switch (cat1.Rasse)
                             {
@@ -382,7 +382,7 @@ namespace Hallo_Welt_2
 
                         Katze cat3 = new Katze();
 
-                        cat3.Name = "Bello";
+                        cat3.Name = "Tom";
                         {
                             Console.WriteLine("\nDie Katze heißt " + cat3.Name + ".");
                         }
@@ -440,19 +440,19 @@ namespace Hallo_Welt_2
                             case "Katze 1":
                                 Console.WriteLine(cat1.Name + ":");
                                 cat1.Fauchen();
-                                Console.WriteLine(cat1.Name + "scheint dich nicht zu mögen.");
+                                Console.WriteLine(cat1.Name + " scheint dich nicht zu mögen.");
                                 Console.ReadKey();
                                 break;
                             case "Katze 2":
                                 Console.WriteLine(cat2.Name + ":");
                                 cat2.Miauen();
-                                Console.WriteLine(cat2.Name + "scheint dich zu mögen.");
+                                Console.WriteLine(cat2.Name + " scheint dich zu mögen.");
                                 Console.ReadKey();
                                 break;
                             case "Katze 3":
                                 Console.WriteLine(cat3.Name + ":");
                                 cat3.Schnurren();
-                                Console.WriteLine(cat3.Name + "scheint dich sehr zu mögen.");
+                                Console.WriteLine(cat3.Name + " scheint dich sehr zu mögen.");
                                 Console.ReadKey();
                                 break;
                         }
